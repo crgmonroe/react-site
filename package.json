@@ -2,15 +2,20 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://themonroes.net/",
   "dependencies": {
+    "file-loader": "^4.2.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-mdl": "^1.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "url-loader": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
