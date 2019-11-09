@@ -19,7 +19,7 @@ class Landing extends Component {
 
                             <hr/>
 
-                            <p>Java | Spring | React | HTML | Flutter | Networking</p>
+                            <p>Java | Spring | React | HTML | CSS | Flutter | jQuery</p>
                         
                         <div className="social-media-links">
 

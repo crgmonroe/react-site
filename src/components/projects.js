@@ -1,10 +1,26 @@
 import React, {Component} from 'react';
+import { Tabs, Tab } from 'react-mdl';
 
 class Projects extends Component {
-    render(){
-        return(
-            <div><h2>Projects Page</h2></div>
-        )
+    constructor(props) {
+        super(props);
+        this.state = { activeTab: 0 };
+    }
+    
+    
+    render() {
+        return (
+            <div className="demo-tabs">
+                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+                    <Tab>Starks</Tab>
+                    <Tab>Lannisters</Tab>
+                    <Tab>Targaryens</Tab>
+                </Tabs>
+                <section>
+                    <div className="content">Content for the tab: {this.state.activeTab}</div>
+                </section>
+            </div>    
+        );
     }
 }
 
